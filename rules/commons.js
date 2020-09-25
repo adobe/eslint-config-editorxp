@@ -18,7 +18,7 @@ module.exports = {
   ignorePatterns: [
     'package-lock.json',
     'node_modules/',
-    'bin/'
+    'dist/'
   ],
   parserOptions: {
     ecmaVersion: 2018,

@@ -32,7 +32,18 @@ module.exports = {
     {
       files: [ '**/*.json' ],
       rules: {
+        // no copyright headers in json files
         'header/header': 'off'
+      }
+    },
+    {
+      files: [ '**/*.test.*' ],
+      rules: {
+        // max function length (without blanks and comments)
+        'max-lines-per-function': [ 'warn', { 'max': 35, 'skipBlankLines': true, 'skipComments': true } ],
+
+        // max statements per function
+        'max-statements': [ 'warn', { 'max': 15 } ]
       }
     }
   ]

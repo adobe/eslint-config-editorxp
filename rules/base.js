@@ -35,7 +35,7 @@ module.exports = {
       ' * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS',
       ' * OF ANY KIND, either express or implied. See the License for the specific language',
       ' * governing permissions and limitations under the License.',
-      ' ',
+      ' '
     ]
   ],
 
@@ -43,7 +43,7 @@ module.exports = {
   'max-statements-per-line': [ 'error', { max: 1 } ],
 
   // allow '_' to be unused
-  'no-unused-vars': [ 'error', { argsIgnorePattern: '^_$', } ],
+  'no-unused-vars': [ 'error', { argsIgnorePattern: '^_$' } ],
 
   // space in backets: [ 1, 2 ]
   'array-bracket-spacing': [ 'warn', 'always', { 'singleValue': true } ],
@@ -143,25 +143,27 @@ module.exports = {
   // one empty line between statements, one empty line at the end of the file
   'no-multiple-empty-lines': [ 'warn', { 'max': 1, 'maxEOF': 0 } ],
 
-  // no extra parens
-  'no-extra-parens': [
-    'warn',
-    'all',
-    {
-      // except for returns: return (foo === 1) ? bar : (bar - 10)
-      'returnAssign': false,
+  // no comma dangle
+  'comma-dangle': [ 'warn', 'never' ],
 
-      // except for sequence expressions: (a + b) > c
-      enforceForSequenceExpressions: false,
+  // code complexity
+  'complexity': [ 'warn', { 'max': 10 } ],
 
-      // except for binary expressions: a || (b && c)
-      'nestedBinaryExpressions': false,
+  // max code depth
+  'max-depth': [ 'warn', { 'max': 4 } ],
 
-      // except for function prototype methods: (function () {}).call()
-      'enforceForFunctionPrototypeMethods': false,
+  // line length
+  'max-len': [ 'warn', { 'code': 150, 'comments': 150 } ],
 
-      // except for arrow functions:
-      'enforceForArrowConditionals': false
-    }
-  ]
+  // max lines per file (without blanks and comments)
+  'max-lines': [ 'warn', { 'max': 500, 'skipBlankLines': true, 'skipComments': true } ],
+
+  // max function length (without blanks and comments)
+  'max-lines-per-function': [ 'warn', { 'max': 25, 'skipBlankLines': true, 'skipComments': true } ],
+
+  // max function params
+  'max-params': [ 'warn', { 'max': 5 } ],
+
+  // max statements per function
+  'max-statements': [ 'warn', { 'max': 10 } ]
 };

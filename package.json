@@ -1,0 +1,46 @@
+{
+  "name": "@adobe/eslint-config-editorxp",
+  "version": "1.0.0",
+  "description": "ESlint configuration",
+  "keywords": [
+    "eslint",
+    "config",
+    "eslint-config",
+    "editorxp"
+  ],
+  "author": "Adobe Systems Inc. <sitexpci@adobe.com>",
+  "license": "Apache-2.0",
+  "repository": "github:adobe/eslint-config-editorxp",
+  "homepage": "https://github.com/adobe/eslint-config-editorxp#readme",
+  "scripts": {
+    "build": "npm run linter",
+    "linter": "./node_modules/.bin/eslint . --ext .js,.ts,.jsx,.tsx,.json",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "commitizen": "^4.2.1",
+    "eslint": "^7.9.0",
+    "eslint-plugin-header": "^3.1.0",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-react": "^7.21.1",
+    "semantic-release": "^17.1.2",
+    "typescript": "^4.0.3"
+  },
+  "files": [
+    "index.js",
+    "react.js",
+    "typescript.js",
+    "rules/"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

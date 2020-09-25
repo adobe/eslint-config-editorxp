@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-Apache%202-blue)](https://github.com/adobe/eslint-config-editorxp/blob/master/LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/@adobe/eslint-config-editorxp.svg)](https://www.npmjs.com/package/@adobe/eslint-config-editorxp)
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eslint-config-editorxp&metric=alert_status)](https://sonarcloud.io/dashboard?id=adobe_eslint-config-editorxp)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=adobe_eslint-config-editorxp&metric=alert_status)](https://sonarcloud.io/dashboard?id=adobe_eslint-config-editorxp)
 [![Known Vulnerabilities](https://snyk.io/test/github/adobe/eslint-config-editorxp/badge.svg)](https://snyk.io/test/github/adobe/eslint-config-editorxp)
 [![Dependencies](https://badges.renovateapi.com/github/adobe/eslint-config-editorxp)](https://app.renovatebot.com/dashboard#github/adobe/eslint-config-editorxp)
 
@@ -11,6 +11,30 @@
 
 ```
 npm install --save-dev eslint @adobe/eslint-config-editorxp
+```
+
+# Configuration
+
+Add entry to `packages.json`:
+
+```
+{
+  "eslintConfig": {
+    "root": true,
+    "extends": [ "@adobe/eslint-config-editorxp/typescript" ]
+  }
+}
+```
+
+Available config variants:
+- `@adobe/eslint-config-editorxp`
+- `@adobe/eslint-config-editorxp/react`
+- `@adobe/eslint-config-editorxp/typescript`
+
+# Usage
+
+```
+eslint --ext .js,.jsx folder/
 ```
 
 ## Contributing

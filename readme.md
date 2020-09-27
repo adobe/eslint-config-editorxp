@@ -10,7 +10,14 @@
 ## Installation
 
 ```
-npm install --save-dev eslint @adobe/eslint-config-editorxp
+# for javascript
+npm install --save-dev eslint eslint-plugin-header eslint-plugin-json @adobe/eslint-config-editorxp
+
+# for react
+npm install --save-dev react eslint-plugin-react
+
+# for typescript
+npm install --save-dev typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 # Configuration
@@ -34,7 +41,7 @@ Available config variants:
 # Usage
 
 ```
-eslint --ext .js,.jsx folder/
+./node_modules/.bin/eslint folder/
 ```
 
 ## Contributing

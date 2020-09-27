@@ -11,15 +11,6 @@
  */
 
 module.exports = {
-  rules: {
-    'react/jsx-filename-extension': [
-      'error',
-      {
-        extensions: [ '.jsx', '.tsx' ]
-      }
-    ]
-  },
-  plugins: [
-    'react'
-  ]
+  // 2 space indentation
+  'react/jsx-indent': [ 'warn', 2 ]
 };

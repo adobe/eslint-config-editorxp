@@ -10,24 +10,34 @@
  * governing permissions and limitations under the License.
  */
 
+const rules = require('./rules/javascript');
+
 module.exports = {
+  extends: [
+    'plugin:json/recommended',
+    'eslint:recommended'
+  ],
+  plugins: [
+    'header',
+    'json'
+  ],
+  globals: {},
   env: {
     node: true,
-    browser: true
+    browser: true,
+    jest: true
   },
   ignorePatterns: [
+    '!.*',
     'package-lock.json',
     'node_modules/',
-    'dist/'
+    'dist/',
+    '.git/'
   ],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
-  plugins: [
-    'header',
-    'json'
-  ],
   overrides: [
     {
       files: [ '**/*.json' ],
@@ -46,5 +56,6 @@ module.exports = {
         'max-statements': [ 'warn', { 'max': 15 } ]
       }
     }
-  ]
+  ],
+  rules
 };

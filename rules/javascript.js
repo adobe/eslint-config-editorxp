@@ -165,5 +165,8 @@ module.exports = {
   'max-params': [ 'warn', { 'max': 5 } ],
 
   // max statements per function
-  'max-statements': [ 'warn', { 'max': 10 } ]
+  'max-statements': [ 'warn', { 'max': 10 } ],
+
+  // require === and !==
+  'eqeqeq': [ 'warn', 'always' ]
 };

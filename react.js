@@ -10,28 +10,29 @@
  * governing permissions and limitations under the License.
  */
 
-const commons = require('./rules/commons');
-const base = require('./rules/base');
-const react = require('./rules/react');
+const rules = require('./rules/react');
 
 module.exports = {
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    './javascript.js'
   ],
-  ...commons,
-  globals: {},
-  rules: {
-    ...base,
-    ...react.rules
-  },
   plugins: [
-    ...commons.plugins,
-    ...react.plugins
+    'react'
+  ],
+  globals: {},
+  overrides: [
+    {
+      files: [
+        '.*.jsx',
+        '*.jsx'
+      ]
+    }
   ],
   settings: {
     react: {
       version: 'latest'
     }
-  }
+  },
+  rules
 };

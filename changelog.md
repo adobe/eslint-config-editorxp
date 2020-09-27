@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.2...v1.0.3) (2020-09-27)
+
+
+### Bug Fixes
+
+* **eslint:** allow long test functions (arror `describe` containers) ([2d978ee](https://github.com/adobe/eslint-config-editorxp/commit/2d978ee3b8f4c66c7e463a9a4472122dfe960a5d))
+
 ## [1.0.2](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.1...v1.0.2) (2020-09-27)
 
 

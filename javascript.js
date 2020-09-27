@@ -50,10 +50,10 @@ module.exports = {
       files: [ '**/*.test.*' ],
       rules: {
         // max function length (without blanks and comments)
-        'max-lines-per-function': [ 'warn', { 'max': 35, 'skipBlankLines': true, 'skipComments': true } ],
+        'max-lines-per-function': [ 'warn', { 'max': 1000, 'skipBlankLines': true, 'skipComments': true } ],
 
         // max statements per function
-        'max-statements': [ 'warn', { 'max': 15 } ]
+        'max-statements': 'off'
       }
     }
   ],

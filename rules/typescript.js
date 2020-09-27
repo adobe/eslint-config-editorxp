@@ -11,14 +11,9 @@
  */
 
 module.exports = {
-  rules: {
-    // warn on `@ts-<directive>` comment (`@ts-expect-error`, `@ts-ignore`, `@ts-nocheck`, `@ts-check`)
-    '@typescript-eslint/ban-ts-comment': 'warn',
+  // warn on `@ts-<directive>` comment (`@ts-expect-error`, `@ts-ignore`, `@ts-nocheck`, `@ts-check`)
+  '@typescript-eslint/ban-ts-comment': 'warn',
 
-    // allow `require()`
-    '@typescript-eslint/no-var-requires': 'off'
-  },
-  plugins: [
-    '@typescript-eslint'
-  ]
+  // allow `require()`
+  '@typescript-eslint/no-var-requires': 'off'
 };

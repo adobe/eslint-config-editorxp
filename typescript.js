@@ -10,25 +10,27 @@
  * governing permissions and limitations under the License.
  */
 
-const commons = require('./rules/commons');
-const base = require('./rules/base');
-const typescript = require('./rules/typescript');
+const rules = require('./rules/typescript');
 
 module.exports = {
   extends: [
-    'plugin:json/recommended',
-    'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    './javascript.js'
   ],
-  ...commons,
-  globals: {},
-  rules: {
-    ...base,
-    ...typescript.rules
-  },
   plugins: [
-    ...commons.plugins,
-    ...typescript.plugins
-  ]
+    '@typescript-eslint'
+  ],
+  globals: {},
+  overrides: [
+    {
+      files: [
+        '.*.ts',
+        '.*.tsx',
+        '*.ts',
+        '*.tsx'
+      ]
+    }
+  ],
+  rules
 };

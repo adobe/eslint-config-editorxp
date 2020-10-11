@@ -15,7 +15,8 @@ const rules = require('./rules/react');
 module.exports = {
   extends: [
     'plugin:react/recommended',
-    './javascript.js'
+    './javascript.js',
+    './typescript.js'
   ],
   plugins: [
     'react'

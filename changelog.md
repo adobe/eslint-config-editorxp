@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.3...v1.0.4) (2020-10-11)
+
+
+### Bug Fixes
+
+* **eslint:** add typescript support in react config ([fcaed61](https://github.com/adobe/eslint-config-editorxp/commit/fcaed61b7844c451ca72e62091185743fc472bcf))
+
 ## [1.0.3](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.2...v1.0.3) (2020-09-27)
 
 

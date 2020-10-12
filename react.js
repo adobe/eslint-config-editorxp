@@ -21,7 +21,10 @@ module.exports = {
   plugins: [
     'react'
   ],
-  globals: {},
+  globals: {
+    JSX: true,
+    React: true
+  },
   overrides: [
     {
       files: [

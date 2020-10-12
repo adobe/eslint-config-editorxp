@@ -15,5 +15,11 @@ module.exports = {
   '@typescript-eslint/ban-ts-comment': 'warn',
 
   // allow `require()`
-  '@typescript-eslint/no-var-requires': 'off'
+  '@typescript-eslint/no-var-requires': 'off',
+
+  // disallow unused vars
+  '@typescript-eslint/no-unused-vars': 'error',
+
+  // handled by: `@typescript-eslint/no-unused-vars`
+  'no-unused-vars': 'off'
 };

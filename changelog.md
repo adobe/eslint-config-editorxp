@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.4...v1.0.5) (2020-10-12)
+
+
+### Bug Fixes
+
+* **eslint:** add `JSX` and `React` to react globals, update `no-unused-vars` for typescript ([6d17b83](https://github.com/adobe/eslint-config-editorxp/commit/6d17b8384071a12a4cf686bff498533ccc08ce08))
+
 ## [1.0.4](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.3...v1.0.4) (2020-10-11)
 
 

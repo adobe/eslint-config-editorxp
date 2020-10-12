@@ -1,6 +1,6 @@
 {
   "name": "@adobe/eslint-config-editorxp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ESlint configuration",
   "keywords": [
     "eslint",

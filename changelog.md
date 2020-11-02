@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.5...v1.0.6) (2020-11-02)
+
+
+### Bug Fixes
+
+* **rules:** add angular rules ([6834226](https://github.com/adobe/eslint-config-editorxp/commit/6834226fee5995b1e18d7a4a4bfeb785b7aef07e))
+
 ## [1.0.5](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.4...v1.0.5) (2020-10-12)
 
 

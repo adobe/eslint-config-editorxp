@@ -47,7 +47,7 @@ module.exports = {
       }
     },
     {
-      files: [ '**/*.test.*' ],
+      files: [ '**/test/**/*', '**/*.test.*', '**/*.spec.*' ],
       rules: {
         // max function length (without blanks and comments)
         'max-lines-per-function': [ 'warn', { 'max': 1000, 'skipBlankLines': true, 'skipComments': true } ],

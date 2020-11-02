@@ -16,6 +16,9 @@ npm install --save-dev eslint eslint-plugin-header eslint-plugin-json @adobe/esl
 # for react
 npm install --save-dev react eslint-plugin-react
 
+# for angular
+npm install --save-dev eslint-angular-react
+
 # for typescript
 npm install --save-dev typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
@@ -36,6 +39,7 @@ Add entry to `packages.json`:
 Available config variants:
 - `@adobe/eslint-config-editorxp`
 - `@adobe/eslint-config-editorxp/react`
+- `@adobe/eslint-config-editorxp/angular`
 - `@adobe/eslint-config-editorxp/typescript`
 
 # Usage

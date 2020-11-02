@@ -35,6 +35,7 @@
   "files": [
     "javascript.js",
     "react.js",
+    "angular.js",
     "typescript.js",
     "rules/"
   ],

@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.7...v1.0.8) (2021-04-13)
+
+
+### Bug Fixes
+
+* update header template ([ca455da](https://github.com/adobe/eslint-config-editorxp/commit/ca455dab17c684d20f466636732048c323de9bcf))
+
 ## [1.0.7](https://github.com/adobe/eslint-config-editorxp/compare/v1.0.6...v1.0.7) (2020-11-02)
 
 
